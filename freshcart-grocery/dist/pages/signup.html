@@ -26,11 +26,11 @@
   <div class="border-bottom shadow-sm">
     <nav class="navbar navbar-light py-2">
       <div class="container justify-content-center justify-content-lg-between">
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" href="index-4.html">
           <img src="../assets/images/logo/freshcart-logo.svg" alt="" class="d-inline-block align-text-top">
         </a>
         <span class="navbar-text">
-          Already have an account? <a href="../pages/signin.html">Sign in</a>
+           <a href="../pages/signin.html">로그인</a>
         </span>
       </div>
     </nav>
@@ -52,8 +52,8 @@
           <!-- col -->
           <div class="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1">
             <div class="mb-lg-9 mb-5">
-              <h1 class="mb-1 h2 fw-bold">Get Start Shopping</h1>
-              <p>Welcome to FreshCart! Enter your email to get started.</p>
+              <h1 class="mb-1 h2 fw-bold">회원가입</h1>
+              <p></p>
             </div>
             <!-- form -->
             <form class="needs-validation" novalidate>
@@ -61,43 +61,90 @@
                 <!-- col -->
                 <div class="col">
                   <!-- input -->
-                  <label for="formSignupfname" class="form-label visually-hidden">First Name</label>
-                  <input type="text" class="form-control" id="formSignupfname" placeholder="First Name" required />
-                  <div class="invalid-feedback">Please enter first name.</div>
+                  <label for="formSignupfname" class="form-label visually-hidden">이름</label>
+                  <input type="text" maxlength="20" class="form-control" id="formSignupfname" placeholder="이름" required />
+                  <div class="invalid-feedback">다시 입력해주세요</div>
                 </div>
                 <div class="col">
+                  <label class="form-label" id="productSKU">성별</label><br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                      id="inlineRadio1" value="option1" checked>
+                    <label class="form-check-label" for="inlineRadio1">남</label>
+                  </div>
                   <!-- input -->
-                  <label for="formSignuplname" class="form-label visually-hidden">Last Name</label>
-                  <input type="text" class="form-control" id="formSignuplname" placeholder="First Name" required />
-                  <div class="invalid-feedback">Please enter last name.</div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                      id="inlineRadio2" value="option2" >
+                    <label class="form-check-label" for="inlineRadio2">여</label>
+                  </div>
+                  <!-- input -->
+
+                </div>
+                <div class="col-12">
+                  <!-- input -->
+                  <label for="formSignuplname" class="form-label visually-hidden">ID</label>
+                  <input type="text" maxlength="15" class="form-control" id="formSignuplname" placeholder="ID" required />
+                  <div class="invalid-feedback">다시 입력해주세요</div>
                 </div>
                 <div class="col-12">
                   <!-- input -->
                   <label for="formSignupEmail" class="form-label visually-hidden">Email address</label>
-                  <input type="email" class="form-control" id="formSignupEmail" placeholder="Email" required />
-                  <div class="invalid-feedback">Please enter email.</div>
+                  <input type="email" maxlength="40" class="form-control" id="formSignupEmail" placeholder="Email" required />
+                  <div class="invalid-feedback">다시 입력해주세요</div>
                 </div>
                 <div class="col-12">
                   <div class="password-field position-relative">
                     <label for="formSignupPassword" class="form-label visually-hidden">Password</label>
                     <div class="password-field position-relative">
-                      <input type="password" class="form-control fakePassword" id="formSignupPassword"
-                        placeholder="*****" required />
+                      <input type="password" maxlength="20"class="form-control fakePassword" id="formSignupPassword"
+                        placeholder="비밀번호 확인" required />
                       <span><i class="bi bi-eye-slash passwordToggler"></i></span>
-                      <div class="invalid-feedback">Please enter password.</div>
+                      <div class="invalid-feedback">12자 이상 입력해주세요</div>
                     </div>
                   </div>
                 </div>
+                <div class="col-12">
+                  <div class="password-field position-relative">
+                    <label for="formSignupPassword" class="form-label visually-hidden">Password</label>
+                    <div class="password-field position-relative">
+                      <input type="password" maxlength="20" class="form-control fakePassword" id="formSignupPassword"
+                        placeholder="비밀번호 확인" required />
+                      <span><i class="bi bi-eye-slash passwordToggler"></i></span>
+                      <div class="invalid-feedback">12자 이상 입력해주세요</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <label for="formSignupfname" class="form-label visually-hidden"></label>
+                  <input type="text" maxlength="8" class="form-control" id="formSignupfname" placeholder="생년월일 ex)19920228" required />
+                  <div class="invalid-feedback">다시 입력해주세요</div>
+                </div>
+                <div class="col">
+                  <label for="formSignupfname" class="form-label visually-hidden"></label>
+                  <input type="text" maxlength="11" class="form-control" id="formSignupfname" placeholder="핸드폰 번호(-빼고입력)" required />
+                  <div class="invalid-feedback">다시 입력해주세요</div>
+                </div>
+                <div class="col-12">
+                  <label for="formSignupfname" class="form-label visually-hidden"></label>
+                  <input type="text" maxlength="30" class="form-control" id="formSignupfname" placeholder="주소입력" required />
+                  <div class="invalid-feedback">다시 입력해주세요</div>
+                </div>
+                <div class="col">
+                  <label for="formSignupfname" class="form-label visually-hidden"></label>
+                  <input type="text" maxlength="30" class="form-control" id="formSignupfname" placeholder="상세주소" required />
+                  <div class="invalid-feedback">다시 입력해주세요</div>
+                </div>
                 <!-- btn -->
-                <div class="col-12 d-grid"><button type="submit" class="btn btn-primary">Register</button></div>
+                <div class="col-12 d-grid"><button type="submit" class="btn btn-primary">가입</button></div>
 
                 <!-- text -->
                 <p>
                   <small>
-                    By continuing, you agree to our
-                    <a href="#!">Terms of Service</a>
-                    &
-                    <a href="#!">Privacy Policy</a>
+                    계속 진행하시면 당사
+                    <a href="#!">서비스 약관</a>
+                    및
+                    <a href="#!">개인정보 보호정책에 동의하시는것 입니다</a>
                   </small>
                 </p>
               </div>
