@@ -1409,12 +1409,12 @@
 									</a>
 								</li>
 								<!-- nav item -->
-								<!-- <li class="nav-item">
+								<li class="nav-item">
 									<a class="nav-link" href="account-payment-method.html">
 										<i class="feather-icon icon-credit-card me-2"></i>
 										결제
 									</a>
-								</li> -->
+								</li>
 								<!-- nav item -->
 								<li class="nav-item">
 									<a class="nav-link" href="account-notification.html">
@@ -1442,78 +1442,48 @@
 								<!-- heading -->
 								<h2 class="mb-0">주소</h2>
 								<!-- button -->
-								<a href="account-address copy.html" class="btn btn-outline-primary" >주소 추가하기</a>
 							</div>
-							<div class="row">
-								<!-- col -->
-								<div class="col-xl-5 col-lg-6 col-xxl-4 col-12 mb-4">
-									<!-- form -->
-									<div class="card">
-										<div class="card-body p-6">
-											<div class="form-check mb-4">
-												<input class="form-check-input" type="radio" name="flexRadioDefault"
-													id="homeRadio" checked />
-												<label class="form-check-label text-dark fw-semibold"
-													for="homeRadio">Home</label>
-											</div>
-											<!-- address -->
-											<p class="mb-6">
-												Jitu Chauhan
-												<br />
-
-												4450 North Avenue Oakland,
-												<br />
-
-												Nebraska, United States,
-												<br />
-
-												402-776-1106
-											</p>
-											<!-- btn -->
-											<a href="#" class="btn btn-info btn-sm">Default address</a>
-											<div class="mt-4">
-												<a href="#" class="text-inherit">Edit</a>
-												<a href="#" class="text-danger ms-3" data-bs-toggle="modal"
-													data-bs-target="#deleteModal">Delete</a>
-											</div>
-										</div>
+							<form class="needs-validation" novalidate>
+								<div class="row g-3">
+									<!-- col -->
+									<div class="col-3">
+										<!-- input -->
+										<label for="formSignupfname" class="form-label visually-hidden">이름</label>
+										<input type="text" maxlength="20" class="form-control" id="formSignupfname" placeholder="이름" required />
+										<div class="invalid-feedback">다시 입력해주세요</div>
+									</div>
+									<div class="col-3">
+										<label for="formSignupfname" class="form-label visually-hidden"></label>
+										<input type="text" maxlength="11" class="form-control" id="formSignupfname" placeholder="핸드폰 번호(-빼고입력)" required />
+										<div class="invalid-feedback">다시 입력해주세요</div>
+									</div>
+								<div class="row g-3">
+									<div class="col-6">
+										<label for="formSignupfname" class="form-label visually-hidden"></label>
+										<input type="text" maxlength="30" class="form-control" id="formSignupfname" placeholder="주소입력" required />
+										<div class="invalid-feedback">다시 입력해주세요</div>
 									</div>
 								</div>
-								<div class="col-xk-5 col-lg-6 col-xxl-4 col-12 mb-4">
-									<!-- input -->
-									<div class="card">
-										<div class="card-body p-6">
-											<div class="form-check mb-4">
-												<input class="form-check-input" type="radio" name="flexRadioDefault"
-													id="officeRadio" />
-												<label class="form-check-label text-dark fw-semibold"
-													for="officeRadio">Office</label>
-											</div>
-											<!-- nav item -->
-											<p class="mb-6">
-												Nitu Chauhan
-												<br />
-
-												3853 Coal Road
-												<br />
-
-												Tannersville, Pennsylvania, 18372, United States
-												<br />
-
-												402-776-1106
-											</p>
-											<!-- link -->
-											<a href="#" class="link-primary">Set as Default</a>
-											<div class="mt-4">
-												<a href="#" class="text-inherit">Edit</a>
-												<!-- btn -->
-												<a href="#" class="text-danger ms-3" data-bs-toggle="modal"
-													data-bs-target="#deleteModal">Delete</a>
-											</div>
-										</div>
+								<div class="row g-3">
+									<div class="col-6">
+										<label for="formSignupfname" class="form-label visually-hidden"></label>
+										<input type="text" maxlength="30" class="form-control" id="formSignupfname" placeholder="상세주소" required />
+										<div class="invalid-feedback">다시 입력해주세요</div>
 									</div>
 								</div>
-							</div>
+								<div class="row g-3">
+									<div class="col-6">
+										<label for="formSignupfname" class="form-label visually-hidden"></label>
+										<input type="text" maxlength="30" class="form-control" id="formSignupfname" placeholder="우편번호" required />
+										<div class="invalid-feedback">다시 입력해주세요</div>
+									</div>
+								</div>
+									<!-- btn -->
+									<div class="col-6 d-grid"><button type="submit" class="btn btn-primary">저장</button></div>
+					
+									<!-- text -->
+								</div>
+							  </form>
 						</div>
 					</div>
 				</div>
